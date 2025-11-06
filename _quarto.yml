@@ -3,6 +3,7 @@ project:
 
 website:
   title: "O.G." # This will be the "O.G." logo on the left
+  site-url: "https://odgarrett.github.io/"
   navbar:
     right: # This puts all the links on the right, like your design
       - href: about/index.qmd
