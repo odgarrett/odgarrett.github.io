@@ -207,6 +207,7 @@ include-in-header:
             font-size: 0.9rem;
             font-weight: 700;
             transform: rotate(-10deg);
+            color: var(--text-color);
         }
 
         #desk-svg-placeholder {
@@ -341,9 +342,12 @@ include-in-header:
             }
 
             .small-svg-container .hover-text {
-                left: auto;
-                right: 0;
-                top: -1.5rem;
+                position: absolute;
+                top: -2rem;
+                left: 5rem;
+                font-size: 0.9rem;
+                font-weight: 700;
+                transform: rotate(-10deg);
             }
 
             /* Quarto header fix */
@@ -476,7 +480,8 @@ control the grid layout independently.
         pathogen evolution before outbreaks occur.
     </p>
 </section>
-<div class="small-svg-container">                    
+<div class="small-svg-container">
+<div class="hover-text">Hover over me!</div>                    
 <!-- 
     ↓↓↓ PASTE YOUR 'DESK SCENE' SVG CODE HERE ↓↓↓
 -->
