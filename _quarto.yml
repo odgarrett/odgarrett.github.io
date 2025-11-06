@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "O.G." # This will be the "O.G." logo on the left
+  navbar:
+    right: # This puts all the links on the right, like your design
+      - href: about/index.qmd
+        text: about
+      - href: cv/index.qmd
+        text: cv
+      - href: publications/index.qmd
+        text: publications
+      - href: research/index.qmd
+        text: research
+      - href: scicomm/index.qmd
+        text: scicomm
+      - href: recipes/index.qmd
+        text: recipes
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
