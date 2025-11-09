@@ -1,16 +1,51 @@
 [
   {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Rim, E. Y., Garrett, O. D., Howard, A. J., Shim, Y., Li, Y., Van Dyke, J. E., Packer, R. C., Ho, N., Jain, R. S., Stewart, V. J., Dinesh-Kumar, S. P., Notwell, J. H., & Ronald, P. C. (2024). Directed evolution of a plant immune receptor for broad spectrum recognition of pathogen effectors. bioRxiv. https://doi.org/10.1101/2024.09.30.614878\nHoward, A. J., Rim, E. Y., Garrett, O. D., Shim, Y., Notwell, J. H., & Ronald, P. C. (2025). Combining Directed Evolution with Machine Learning Enables Accurate Genotype-to-Phenotype Predictions. bioRxiv. https://doi.org/10.1101/2025.01.27.635131\nBerlingeri, J., Fuentes, A., Ranario, E., Yun, H., Rim, E. Y., Garrett, O., Howard, A., LaPorte, M.-F., Lo, S., Pauli, D., Hershberger, J., Earles, M., Van Deynze, A., Brummer, E. C., Michelmore, R., Wong, C. Y. S., Magney, T. S., Ronald, P. C., Runcie, D. E., … Diepenbrock, C. H. (2025). Integration of crop modeling and sensing into molecular breeding for nutritional quality and stress tolerance. Theoretical and Applied Genetics, 138(9), 205. https://doi.org/10.1007/s00122-025-04984-y"
+  },
+  {
+    "objectID": "publications/index.html#graduate-work-at-uc-davis",
+    "href": "publications/index.html#graduate-work-at-uc-davis",
+    "title": "Publications",
+    "section": "",
+    "text": "Rim, E. Y., Garrett, O. D., Howard, A. J., Shim, Y., Li, Y., Van Dyke, J. E., Packer, R. C., Ho, N., Jain, R. S., Stewart, V. J., Dinesh-Kumar, S. P., Notwell, J. H., & Ronald, P. C. (2024). Directed evolution of a plant immune receptor for broad spectrum recognition of pathogen effectors. bioRxiv. https://doi.org/10.1101/2024.09.30.614878\nHoward, A. J., Rim, E. Y., Garrett, O. D., Shim, Y., Notwell, J. H., & Ronald, P. C. (2025). Combining Directed Evolution with Machine Learning Enables Accurate Genotype-to-Phenotype Predictions. bioRxiv. https://doi.org/10.1101/2025.01.27.635131\nBerlingeri, J., Fuentes, A., Ranario, E., Yun, H., Rim, E. Y., Garrett, O., Howard, A., LaPorte, M.-F., Lo, S., Pauli, D., Hershberger, J., Earles, M., Van Deynze, A., Brummer, E. C., Michelmore, R., Wong, C. Y. S., Magney, T. S., Ronald, P. C., Runcie, D. E., … Diepenbrock, C. H. (2025). Integration of crop modeling and sensing into molecular breeding for nutritional quality and stress tolerance. Theoretical and Applied Genetics, 138(9), 205. https://doi.org/10.1007/s00122-025-04984-y"
+  },
+  {
+    "objectID": "publications/index.html#undergraduate-work-at-haverford-college",
+    "href": "publications/index.html#undergraduate-work-at-haverford-college",
+    "title": "Publications",
+    "section": "Undergraduate work at Haverford College",
+    "text": "Undergraduate work at Haverford College\nGarrett, O. and Whalen, K. E. (2023). A Bacterial Quorum Sensing Signal is a Potent Inhibitor of de novo Pyrimidine Biosynthesis in the Globally Abundant Emiliania huxleyi. Frontiers in Microbiology. https://doi.org/10.3389/fmicb.2023.1266972\nBifendeh, A. L. N., Hsu, K. K., McBride, C. M., Ferguson, C. M., Baumann, E. R., Capcha-Rodriguez, D., Chen, X., Chery, B., Chihade, M. M., Umpierre, P. D., Evans, T., Everett, C. H., Faheem, S. F., Garrett, O. D., Gottesfeld, A. R., Gupta, I. G., Haas, J. D., Haupt, T. A., Katz, J., … Charkoudian, L. K. (2025). Exploring the compatibility of phosphopantetheinyl transferases with acyl carrier proteins spanning type II polyketide synthase sequence space. Journal of Industrial Microbiology and Biotechnology, 52, kuaf031. https://doi.org/10.1093/jimb/kuaf031"
+  },
+  {
     "objectID": "about/index.html",
     "href": "about/index.html",
     "title": "Oscar D. Garrett",
     "section": "",
-    "text": "I’m Oscar, a Plant Biology Ph.D. student at the University of California, Davis. I conduct my research in Pamela Ronald’s lab, where I study how we can wield synthetic and computational biology to improve crops, with a particular emphasis on disease resistance."
+    "text": "I’m Oscar, a Plant Biology Ph.D. student at the University of California, Davis. I conduct my research in Pamela Ronald’s lab, where I use synthetic and computational biology to improve crops, with a particular emphasis on disease resistance."
+  },
+  {
+    "objectID": "about/index.html#about-me",
+    "href": "about/index.html#about-me",
+    "title": "Oscar D. Garrett",
+    "section": "",
+    "text": "I’m Oscar, a Plant Biology Ph.D. student at the University of California, Davis. I conduct my research in Pamela Ronald’s lab, where I use synthetic and computational biology to improve crops, with a particular emphasis on disease resistance."
   },
   {
     "objectID": "about/index.html#education",
     "href": "about/index.html#education",
     "title": "Oscar D. Garrett",
     "section": "Education",
-    "text": "Education\nUniversity of California, Davis | Davis, CA Ph.D. in Plant Biology | Sept 2024 - Present\nHaverford College | Haverford, PA B.S. in Biology | Aug 2019 - May 2023"
+    "text": "Education\nUniversity of California, Davis\nPh.D. in Plant Biology\nSept 2024 - Present\nHaverford College\nB.S. in Biology\nAug 2019 - May 2023"
+  },
+  {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download PDF file."
   }
 ]
