@@ -1,3 +1,15 @@
 ---
 title: "Publications"
 ---
+## Graduate work at UC Davis
+Rim, E. Y., **Garrett, O. D.**, Howard, A. J., Shim, Y., Li, Y., Van Dyke, J. E., Packer, R. C., Ho, N., Jain, R. S., Stewart, V. J., Dinesh-Kumar, S. P., Notwell, J. H., & Ronald, P. C. (2024). Directed evolution of a plant immune receptor for broad spectrum recognition of pathogen effectors. *bioRxiv*. https://doi.org/10.1101/2024.09.30.614878 
+
+Howard, A. J., Rim, E. Y., **Garrett, O. D.**, Shim, Y., Notwell, J. H., & Ronald, P. C. (2025). Combining Directed Evolution with Machine Learning Enables Accurate Genotype-to-Phenotype Predictions. *bioRxiv*. https://doi.org/10.1101/2025.01.27.635131
+
+Berlingeri, J., Fuentes, A., Ranario, E., Yun, H., Rim, E. Y., **Garrett, O.**, Howard, A., LaPorte, M.-F., Lo, S., Pauli, D., Hershberger, J., Earles, M., Van Deynze, A., Brummer, E. C., Michelmore, R., Wong, C. Y. S., Magney, T. S., Ronald, P. C., Runcie, D. E., … Diepenbrock, C. H. (2025). Integration of crop modeling and sensing into molecular breeding for nutritional quality and stress tolerance. *Theoretical and Applied Genetics*, 138(9), 205. https://doi.org/10.1007/s00122-025-04984-y
+
+
+## Undergraduate work at Haverford College
+**Garrett, O.** and Whalen, K. E. (2023). A Bacterial Quorum Sensing Signal is a Potent Inhibitor of de novo Pyrimidine Biosynthesis in the Globally Abundant Emiliania huxleyi. *Frontiers in Microbiology*. https://doi.org/10.3389/fmicb.2023.1266972
+
+Bifendeh, A. L. N., Hsu, K. K., McBride, C. M., Ferguson, C. M., Baumann, E. R., Capcha-Rodriguez, D., Chen, X., Chery, B., Chihade, M. M., Umpierre, P. D., Evans, T., Everett, C. H., Faheem, S. F., **Garrett, O. D.**, Gottesfeld, A. R., Gupta, I. G., Haas, J. D., Haupt, T. A., Katz, J., … Charkoudian, L. K. (2025). Exploring the compatibility of phosphopantetheinyl transferases with acyl carrier proteins spanning type II polyketide synthase sequence space. *Journal of Industrial Microbiology and Biotechnology*, 52, kuaf031. https://doi.org/10.1093/jimb/kuaf031

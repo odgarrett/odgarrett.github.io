@@ -1,5 +1,6 @@
 ---
 title: "Oscar D. Garrett"
+subtitle: "Plant Biology Ph.D. Student at UC Davis"
 toc: false
 image: about_picture.jpg
 about:
@@ -30,15 +31,17 @@ header-includes: >
 resources:
   - ../assets/about.css
 ---
+## About me
 
-
-I'm Oscar, a Plant Biology Ph.D. student at the University of California, Davis. I conduct my research in Pamela Ronald's lab, where I study how we can wield synthetic and computational biology to improve crops, with a particular emphasis on disease resistance.
+I'm Oscar, a Plant Biology Ph.D. student at the University of California, Davis. I conduct my research in Pamela Ronald's lab, where I use synthetic and computational biology to improve crops, with a particular emphasis on disease resistance.
 
 ## Education
 
-University of California, Davis | Davis, CA
-Ph.D. in Plant Biology | Sept 2024 - Present
+University of California, Davis  
+Ph.D. in Plant Biology  
+Sept 2024 - Present  
 
-Haverford College | Haverford, PA
-B.S. in Biology | Aug 2019 - May 2023
+Haverford College  
+B.S. in Biology  
+Aug 2019 - May 2023  
 
