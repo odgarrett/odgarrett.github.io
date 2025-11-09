@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://odgarrett.github.io/publications/index.html</loc>
+    <lastmod>2025-11-09T15:45:59.563Z</lastmod>
+  </url>
+  <url>
     <loc>https://odgarrett.github.io/index.html</loc>
     <lastmod>2025-11-09T14:55:10.015Z</lastmod>
   </url>
@@ -11,9 +15,5 @@
   <url>
     <loc>https://odgarrett.github.io/cv/index.html</loc>
     <lastmod>2025-11-09T15:40:11.147Z</lastmod>
-  </url>
-  <url>
-    <loc>https://odgarrett.github.io/publications/index.html</loc>
-    <lastmod>2025-11-09T15:45:59.563Z</lastmod>
   </url>
 </urlset>

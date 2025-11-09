@@ -28,7 +28,7 @@
 }
 
 .about-image {
-  width: 100%;
+  width: 100% !important;
 }
 
 /* mobile query up for screens up to ~992px wide */
