@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – O.G.</title>
+<title>Research – O.G.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -93,27 +93,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about/index.html"> 
+    <a class="nav-link" href="../about/"> 
 <span class="menu-text">about</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv/index.html"> 
+    <a class="nav-link" href="../cv/"> 
 <span class="menu-text">cv</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications/index.html"> 
+    <a class="nav-link" href="../publications/"> 
 <span class="menu-text">publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../research/index.html" aria-current="page"> 
+    <a class="nav-link" href="../research/"> 
 <span class="menu-text">research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../scicomm/index.html"> 
+    <a class="nav-link" href="../scicomm/"> 
 <span class="menu-text">scicomm</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../recipes/index.html"> 
+    <a class="nav-link" href="../recipes/"> 
 <span class="menu-text">recipes</span></a>
   </li>  
 </ul>
@@ -131,9 +131,25 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Research</h1>
+</div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 
@@ -541,6 +557,29 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Check if a star container exists, or create one
+      let starContainer = document.getElementById('star-container');
+      if (!starContainer) {
+          starContainer = document.createElement('div');
+          starContainer.id = 'star-container';
+          document.body.prepend(starContainer);
+      }
+      
+      const numStars = 150;
+      for (let i = 0; i < numStars; i++) {
+          let star = document.createElement('div');
+          star.className = 'star';
+          const size = Math.random() * 2 + 1; 
+          star.style.width = `${size}px`;
+          star.style.height = `${size}px`;
+          star.style.top = `${Math.random() * 100}%`;
+          star.style.left = `${Math.random() * 100}%`;
+          starContainer.appendChild(star);
+      }
+  });
+</script>
 
 
 
