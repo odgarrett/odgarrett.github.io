@@ -1,7 +1,5 @@
 ---
-theme: none
 page-layout: custom
-title-block-style: none
 include-in-header:
   - text: |
       <meta charset="UTF-8">
@@ -10,143 +8,29 @@ include-in-header:
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
         <style>
-        /* --- QUARTO TITLE FIX --- */
-        .quarto-title-block {
-            display: none !important;
-        }
-
-        /* --- NEW: HIDE QUARTO'S NAVBAR (THE GAP) --- */
-        header#quarto-header {
-            display: none !important;
-        }
-
-        /* --- Basic Setup & Colors --- */
-        :root {
-            --bg-color: #3a4a55;
-            --text-color: #f0f0f0;
-            --font-main: 'Inconsolata', monospace;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* * QUARTO FIX: 
-         * Quarto injects its own <body> tag, which might have margins.
-         * We also target 'body' for the background, not 'html, body'.
-        */
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: var(--font-main);
-            overflow-x: hidden; /* Prevents horizontal scroll */
-            min-height: 100vh;
-            margin: 0; /* Explicitly remove Quarto's default margin */
-            padding: 0; /* Explicitly remove Quarto's default padding */
-        }
-
-        /* --- Starry Background --- */
-        #star-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%; 
-            height: 100vh;
-            z-index: 0;
-            pointer-events: none; 
-        }
-
-        .star {
-            position: absolute;
-            background: var(--text-color);
-            border-radius: 50%;
-            opacity: 0.7;
-        }
-
-        /* --- Page Structure (to sit on top of stars) --- */
+        /* --- Page Structure --- */
         .page-content {
             position: relative;
             z-index: 1;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            
-            /* --- NEW: ADD PADDING & MAX-WIDTH --- */
             width: 100%;
-            /* max-width: 1800px; Constrains content width */
-            /* margin: 0 auto;      Centers the content */
-            padding: 0 3rem;    /* Adds side padding */
         }
 
         /* --- Header & Navigation --- */
-        /* * QUARTO FIX: 
-         * We are now "taking over" the Quarto header.
-         * Quarto renders its navbar inside a <header> tag by default.
-         * We will hide Quarto's content and style *our* header within it.
-        */
-        body > header {
-            /* This targets Quarto's main <header> tag */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem 3rem;
-            flex-wrap: wrap;
-            
-            /* HIDE Quarto's default navbar container */
-            & .navbar {
-                display: none;
-            }
-        }
-        
-        /* * QUARTO FIX: 
-         * We need to add our custom header *inside* Quarto's <header>.
-         * We've renamed your .site-header to .custom-header 
-         * to avoid conflicts.
-        */
-        .custom-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 100%; /* Make our header fill the Quarto header */
-            /* padding: 2rem 0;  Use parent's side padding */
-        }
-
-        .custom-header .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .custom-header nav ul {
-            display: flex;
-            list-style: none;
-            gap: 1.5rem;
-            flex-wrap: wrap; 
-            margin-bottom: 0 !important;
-        }
-
-        .custom-header nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            transition: text-decoration 0.2s ease;
-        }
-
-        .custom-header nav a:hover {
-            text-decoration: underline;
-        }
-
         /* * QUARTO FIX:
          * 'main' is now the main Quarto content container.
          * We reset its padding.
         */
         main {
-            padding: 0 !important; /* Override Quarto's default padding */
+          padding: 0 !important; /* Override Quarto's default padding */
+        }
+
+        .navbar {
+          position: fixed;
+          width: 100%;
+          z-index: 10;
         }
 
         /* * We create a *new* container for our grid 
@@ -155,23 +39,29 @@ include-in-header:
         .main-grid-container {
             flex-grow: 1; 
             display: grid;
-            grid-template-columns: 1fr 1fr; /* <-- EDIT THIS LINE */ 
+            grid-template-columns: 1fr 1fr;
             align-items: center;
-            gap: 4rem;
-            /* padding: 2rem 0; /* Use parent's side padding */
+            width: 100%;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 2rem 3rem;
         }
 
         /* --- Left Column: Text Content --- */
         .left-container {
-            height: 80%;
-            justify-content: space-between;
             display: flex;
             flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
         }
 
         .text-content {
-            max-width: 600px !important;
-            justify-self: center;
+            max-width: 650px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: end;
+            align-self: end;
         }
 
         .text-content h1 {
@@ -181,15 +71,15 @@ include-in-header:
         }
 
         .text-content .subtitle {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 700;
-            letter-spacing: 1.5px;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
-            margin-bottom: 1.5rem;
+            margin-bottom: 3rem;
         }
 
         .text-content .description {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             line-height: 1.6;
             margin-bottom: 2rem;
         }
@@ -202,8 +92,8 @@ include-in-header:
 
         .small-svg-container .hover-text {
             position: absolute;
-            top: -2rem;
-            left: 5rem;
+            top: -1rem;
+            left: 3rem;
             font-size: 0.9rem;
             font-weight: 700;
             transform: rotate(-10deg);
@@ -235,29 +125,25 @@ include-in-header:
             align-items: center;
         }
 
-        #pathogen-svg-placeholder {
-            width: 80% !important;
-            max-width: 600px !important; 
-            height: auto;
-            max-height: 600px !important;
+        #resistosome-svg-placeholder {
             animation: slow-rotate 150s linear infinite;
         }
 
-        #pathogen-svg-placeholder,
+        #resistosome-svg-placeholder,
         #nn-svg-placeholder {
             /* Make both SVGs stack on top of each other */
             position: absolute; /* This stacks them */
-            width: 80% !important;
-            max-width: 600px !important; 
+            width: 80%;
+            max-width: 600px; 
             height: auto;
-            max-height: 600px !important;
+            max-height: 600px;
             
             /* Animation & Transition */
             transition: opacity 0.4s ease-in-out; /* Add fade effect */
         }
 
-        /* Default state: Pathogen is visible, NN is hidden */
-        #pathogen-svg-placeholder {
+        /* Default state: resistosome is visible, NN is hidden */
+        #resistosome-svg-placeholder {
             opacity: 1;
             pointer-events: auto; /* Clickable */
         }
@@ -266,7 +152,7 @@ include-in-header:
             pointer-events: none; /* Not clickable when hidden */
         }
 
-        /* --- NEW: Neural Net Animation --- */
+        /* --- Neural Net Animation --- */
 
         /* Base style for all nodes and weights inside the NN */
         /* This assumes your nodes are <circle> and weights are <path> */
@@ -299,7 +185,6 @@ include-in-header:
         }
 
         /* --- FORWARD PASS STAGGER --- */
-        /* (This is the fast "forward pass" you wanted) */
         #nn-svg-placeholder #layer1   { animation-delay: 0.1s; }
         #nn-svg-placeholder #weights1 { animation-delay: 0.2s; }
         #nn-svg-placeholder #layer2   { animation-delay: 0.3s; }
@@ -313,7 +198,7 @@ include-in-header:
         #nn-svg-placeholder #layer6   { animation-delay: 1.1s; }
         
         /* This class will be toggled by JS */
-        .large-svg-container.show-nn #pathogen-svg-placeholder {
+        .large-svg-container.show-nn #resistosome-svg-placeholder {
             opacity: 0;
             pointer-events: none;
         }
@@ -323,18 +208,37 @@ include-in-header:
         }
 
         /* --- Responsive Design --- */
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
             .main-grid-container {
                 grid-template-columns: 1fr;
                 text-align: center;
+                padding-top: 4rem;
+                padding-bottom: 1rem;
             }
 
             .text-content {
-                max-width: 100%;
+                max-width: 600px;
+                text-align: center;
+                align-self: center;
+            }
+
+            .text-content .description {
+                margin-bottom: 2rem;
             }
 
             .large-svg-container {
+                opacity: 0.7;
                 order: -1;
+            }
+
+            #resistosome-svg-placeholder {
+              max-height: 50vh;
+              top: -12vh;
+            }
+
+            #nn-svg-placeholder {
+              max-height: 50vh;
+              top: -12vh;
             }
 
             .small-svg-container {
@@ -342,23 +246,15 @@ include-in-header:
             }
 
             .small-svg-container .hover-text {
-                position: absolute;
-                top: -2rem;
-                left: 5rem;
-                font-size: 0.9rem;
-                font-weight: 700;
+                font-size: 0.7rem;
+                top: -1.5rem;
+                right: 0;
+                left: auto;
                 transform: rotate(-10deg);
             }
 
-            /* Quarto header fix */
-            body > header {
-                flex-direction: column;
-                gap: 1.5rem;
-                padding-bottom: 1rem;
-            }
-
-            .custom-header nav ul {
-                justify-content: center;
+            #desk-svg-placeholder {
+                max-height: 15vh;
             }
         }
 
@@ -372,21 +268,20 @@ include-in-header:
             }
         }
 
-        /* --- NEW: Neural Net Keyframes --- */
         @keyframes nn-pulse-nodes {
-        /* This flashes the nodes */
-        0%   { opacity: 0.7; } /* Start dim */
-        10%  { opacity: 1; }   /* Peak bright (at 10% of 3s = 0.3s) */
-        20%  { opacity: 0.7; } /* Back to dim (at 20% of 3s = 0.6s) */
-        100% { opacity: 0.7; } /* Stay dim for the rest of the 3s loop */
-        }
+            /* This flashes the nodes */
+            0%   { opacity: 0.7; } /* Start dim */
+            10%  { opacity: 1; }   /* Peak bright (at 10% of 3s = 0.3s) */
+            20%  { opacity: 0.7; } /* Back to dim (at 20% of 3s = 0.6s) */
+            100% { opacity: 0.7; } /* Stay dim for the rest of the 3s loop */
+            }
 
         @keyframes nn-pulse-weights {
-        /* This flashes the connections */
-        0%   { opacity: 0.7; }
-        10%  { opacity: 1; }
-        20%  { opacity: 0.7; }
-        100% { opacity: 0.7; }
+            /* This flashes the connections */
+            0%   { opacity: 0.7; }
+            10%  { opacity: 1; }
+            20%  { opacity: 0.7; }
+            100% { opacity: 0.7; }
         }
       </style>
 include-after-body:
@@ -419,7 +314,7 @@ include-after-body:
                     largeSvgContainer.classList.add('show-nn');
                 });
 
-                // On wet-lab hover: Show Pathogen (the default)
+                // On wet-lab hover: Show resistosome (the default)
                 wetLabGroup.addEventListener('mouseover', () => {
                     largeSvgContainer.classList.remove('show-nn');
                 });
@@ -448,19 +343,7 @@ This is our custom header, which will be injected
 inside Quarto's <header> tag automatically.
 We've given it a new class .custom-header
 -->
-<header class="custom-header">
-<div class="logo">O.G.</div>
-<nav>
-    <ul>
-        <li><a href="#">about</a></li>
-        <li><a href="#">cv</a></li>
-        <li><a href="#">publications</a></li>
-        <li><a href="#">research</a></li>
-        <li><a href="#">scicomm</a></li>
-        <li><a href="#">recipes</a></li>
-    </ul>
-</nav>
-</header>
+
 
 <!-- 
 QUARTO FIX:
@@ -477,14 +360,12 @@ control the grid layout independently.
         I'm Oscar, a Plant Biology Ph.D. student at UC Davis.
         I research how we can use synthetic and computational
         biology to enhance plant immunity and forecast
-        pathogen evolution before outbreaks occur.
+        resistosome evolution before outbreaks occur.
     </p>
 </section>
 <div class="small-svg-container">
 <div class="hover-text">Hover over me!</div>                    
-<!-- 
-    ↓↓↓ PASTE YOUR 'DESK SCENE' SVG CODE HERE ↓↓↓
--->
+
 <svg
 viewBox="0 0 904.07214 440.93066"
 version="1.1"
@@ -1064,12 +945,12 @@ transform="matrix(0.70210899,0,0,0.70210899,-625.06223,1189.3085)"><g
 <!-- Right Column -->
 <section class="large-svg-container">
 <!-- 
-    ↓↓↓ PASTE YOUR 'PATHOGEN CLUSTER' SVG CODE HERE ↓↓↓ 
+    ↓↓↓ PASTE YOUR 'resistosome CLUSTER' SVG CODE HERE ↓↓↓ 
 -->
 <svg
    viewBox="0 0 1372.2014 1336.3716"
    version="1.1"
-   id="pathogen-svg-placeholder"
+   id="resistosome-svg-placeholder"
    xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
@@ -1562,7 +1443,7 @@ transform="matrix(0.70210899,0,0,0.70210899,-625.06223,1189.3085)"><g
            d="m 3029.3393,660.72535 c 5.4736,3.18516 8.9952,8.70608 13.4548,12.94583"
            id="path187-2" /></g></g></g>
 </svg>
-<!-- ↑↑↑ END 'PATHOGEN CLUSTER' SVG SECTION ↑↑↑ -->
+<!-- ↑↑↑ END 'resistosome CLUSTER' SVG SECTION ↑↑↑ -->
 <!-- ↓↓↓ START 'NEURAL NETWORK' SVG SECTION ↓↓↓-->
 <svg
    width="1243.4915"
