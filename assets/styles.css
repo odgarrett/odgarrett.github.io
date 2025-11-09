@@ -1,5 +1,6 @@
 :root {
-    --bg-color: #3a4a55;
+    --bg-color: rgb(58, 74, 85);
+    --about-bg-color: rgba(40, 52, 59, 0.8);
     --text-color: #f0f0f0;
     --font-main: 'Inconsolata', monospace;
 }

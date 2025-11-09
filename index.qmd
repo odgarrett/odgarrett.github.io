@@ -75,11 +75,11 @@ include-in-header:
             font-weight: 700;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
         }
 
         .text-content .description {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: 2rem;
         }
@@ -101,6 +101,7 @@ include-in-header:
         }
 
         #desk-svg-placeholder {
+            max-height: 15vh;
             width: 100%;
             transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
         }
@@ -222,8 +223,17 @@ include-in-header:
                 align-self: center;
             }
 
+            .text-content h1 {
+                font-size: 2rem;
+            }
+
+            .text-content .subtitle {
+                font-size: 0.9rem;
+            }
+
             .text-content .description {
-                margin-bottom: 2rem;
+                font-size: 0.9rem;
+                margin-bottom: 5rem;
             }
 
             .large-svg-container {
@@ -231,14 +241,18 @@ include-in-header:
                 order: -1;
             }
 
+            #resistosome-svg-placeholder,
+            #nn-svg-placeholder {
+              max-height: 45vh;
+              top: 18vh;
+            }
+
             #resistosome-svg-placeholder {
-              max-height: 50vh;
-              top: -12vh;
+                animation: slow-rotate-translate 150s linear infinite;
             }
 
             #nn-svg-placeholder {
-              max-height: 50vh;
-              top: -12vh;
+                transform: translateY(-50%);
             }
 
             .small-svg-container {
@@ -255,6 +269,34 @@ include-in-header:
 
             #desk-svg-placeholder {
                 max-height: 15vh;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .text-content h1 {
+                font-size: 2rem;
+            }
+
+            .text-content .subtitle {
+                font-size: 0.9rem;
+            }
+
+            .text-content .description {
+                font-size: 0.9rem;
+            }
+
+            #resistosome-svg-placeholder,
+            #nn-svg-placeholder {
+                max-height: 50vh;
+                top: 18vh;
+            }
+
+            #resistosome-svg-placeholder {
+                animation: slow-rotate-translate 150s linear infinite;
+            }
+
+            #nn-svg-placeholder {
+                transform: translateY(-50%);
             }
         }
 
@@ -282,6 +324,15 @@ include-in-header:
             10%  { opacity: 1; }
             20%  { opacity: 0.7; }
             100% { opacity: 0.7; }
+        }
+
+        @keyframes slow-rotate-translate {
+            from {
+                transform: translateY(-50%) rotate(0deg);
+            }
+            to {
+                transform: translateY(-50%) rotate(360deg);
+            }
         }
       </style>
 include-after-body:
@@ -338,14 +389,6 @@ include-after-body:
 <div class="page-content">
 
 <!-- 
-QUARTO FIX: 
-This is our custom header, which will be injected
-inside Quarto's <header> tag automatically.
-We've given it a new class .custom-header
--->
-
-
-<!-- 
 QUARTO FIX:
 We wrap our main content in a new div to
 control the grid layout independently.
@@ -357,10 +400,7 @@ control the grid layout independently.
     <h1>Oscar D. Garrett</h1>
     <p class="subtitle">PLANT BIOLOGY | BIOENGINEERING | SCIENCE COMMUNICATION</p>
     <p class="description">
-        I'm Oscar, a Plant Biology Ph.D. student at UC Davis.
-        I research how we can use synthetic and computational
-        biology to enhance plant immunity and forecast
-        resistosome evolution before outbreaks occur.
+        I'm Oscar, a Plant Biology Ph.D. student at UC Davis interested in <strong>computational protein engineering</strong> and the <strong>host-pathogen molecular arms race</strong>. My research combines <strong>high-throughput screening</strong> and <strong>machine learning</strong> to simulate this coevolution, aiming to forecast pathogen evolution and engineer stronger plant immune receptors.
     </p>
 </section>
 <div class="small-svg-container">
