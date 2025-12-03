@@ -134,7 +134,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#modeling-pathogen-effector-evolution" id="toc-modeling-pathogen-effector-evolution" class="nav-link active" data-scroll-target="#modeling-pathogen-effector-evolution">Modeling Pathogen Effector Evolution</a></li>
   <li><a href="#engineering-plant-immune-receptors" id="toc-engineering-plant-immune-receptors" class="nav-link" data-scroll-target="#engineering-plant-immune-receptors">Engineering Plant Immune Receptors</a></li>
-  <li><a href="#active-learning-with-protein-language-models" id="toc-active-learning-with-protein-language-models" class="nav-link" data-scroll-target="#active-learning-with-protein-language-models">Active Learning with Protein Language Models</a></li>
   </ul>
 </nav>
     </div>
@@ -164,8 +163,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="modeling-pathogen-effector-evolution">Modeling Pathogen Effector Evolution</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/pathogen_modeling.png" class="img-fluid figure-img"></p>
-<figcaption>Modeling pathogen evolution for the preemptive engineering of immune receptors</figcaption>
+<p><img src="images/pathogen_evolution.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Modeling pathogen evolution for the preemptive engineering of immune receptors.</strong> It starts by watching plants and pathogens battle it out on a molecular scale. These battles are recorded then used to train machine learning models that can simulate these battles. This model can then simulate the evolution of the pathogens, identifying high risk variants to preemptively protect against.</figcaption>
 </figure>
 </div>
 <p>Hosts and pathogens are in a never-ending molecular arms race. First, pathogens evolved to steal host resources, then hosts evolved to detect and defend against pathogens. Pathogens evolved ways to circumvent these defenses, then the host evolves more robust defenses. This evolutionary back and forth is commonly referred to as the Red Queen hypothesis, named after the namesake character in Lewis Carroll’s Alice in Wonderland who races Alice but neither of them advance anywhere at all.</p>
@@ -186,25 +185,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ysd.png" class="img-fluid figure-img"></p>
-<figcaption>Plant immune receptor displayed on the surface of yeast cells binding to fluorescently-labeled pathogen molecules</figcaption>
+<figcaption><strong>Plant immune receptors displayed on the surface of yeast cells binding to fluorescently-labeled pathogen molecules.</strong></figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>To learn more, see the preprints linked above, or take a look at my accessible paper overviews.</p>
-</section>
-<section id="active-learning-with-protein-language-models" class="level2">
-<h2 class="anchored" data-anchor-id="active-learning-with-protein-language-models">Active Learning with Protein Language Models</h2>
-<p>If you’ve found your way to this page, chances are that you’re familiar with large language models. If you’re at all familiar with how they work, you’ll know they’re notoriously data hungry. For biological prediction tasks, particularly involving proteins, data points may be expensive, prohibitively so if your goal was to train powerful models from scratch. Fortunately, there are plenty of groups out their dedicating enormous amounts of resources to <em>pretraining</em> powerful language models on the protein data that has been collected over several decades, enabling us hybrid wet-dry lab scientists to fine-tune them on the data we can collect. This can drastically improve your model’s predictive performance without breaking the bank.</p>
-<p>However, some data are too expensive to acquire even at the scale of fine-tuning, or labs might just not have enough resources to scale their system of interest. In these cases, to feed our hungry models, we need to squeeze the most information out of every data point that we possibly can.</p>
-<p>To accomplish this, we must first accept that all datapoints are not created equal, at least not in the context of a dataset. Your model will learn more from some datapoints than others (think about the difference between two mostly identical sequences with very similar phenotypes, not so useful). The art of algorithmically finding these best datapoints with limited information to build the best model with the least data is called <strong>active learning</strong>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/active_learning.png" class="img-fluid figure-img"></p>
-<figcaption>Active learning selects the points most likely to be informative for training a model</figcaption>
-</figure>
-</div>
-<p>I’ve been experimenting with active learning systems for fine-tuning protein language models on our directed evolution data. So far, to no avail. Still, if you’d like to see what I’ve tried and what has failed, head over to my <a href="https://github.com/odgarrett/plm_with_active_learning">Github repo</a> or follow along in my notebook here.</p>
+<p>To learn more, see the preprints linked above.</p>
 
 
 </section>
