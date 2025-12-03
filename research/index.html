@@ -127,8 +127,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#modeling-pathogen-effector-evolution" id="toc-modeling-pathogen-effector-evolution" class="nav-link active" data-scroll-target="#modeling-pathogen-effector-evolution">Modeling Pathogen Effector Evolution</a></li>
+  <li><a href="#engineering-plant-immune-receptors" id="toc-engineering-plant-immune-receptors" class="nav-link" data-scroll-target="#engineering-plant-immune-receptors">Engineering Plant Immune Receptors</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -152,8 +159,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="modeling-pathogen-effector-evolution" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-pathogen-effector-evolution">Modeling Pathogen Effector Evolution</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pathogen_evolution.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Modeling pathogen evolution for the preemptive engineering of immune receptors.</strong> It starts by watching plants and pathogens battle it out on a molecular scale. These battles are recorded then used to train machine learning models that can simulate these battles. This model can then simulate the evolution of the pathogens, identifying high risk variants to preemptively protect against.</figcaption>
+</figure>
+</div>
+<p>Hosts and pathogens are in a never-ending molecular arms race. First, pathogens evolved to steal host resources, then hosts evolved to detect and defend against pathogens. Pathogens evolved ways to circumvent these defenses, then the host evolves more robust defenses. This evolutionary back and forth is commonly referred to as the Red Queen hypothesis, named after the namesake character in Lewis Carroll’s Alice in Wonderland who races Alice but neither of them advance anywhere at all.</p>
+<p>We of course see this same dynamic in plants, and for crops, human breeding programs have been continually shoving monocrops forward in this race, making similarly poor progress. What if we could just…win the race? If we did, we would get a roughly 30% boost in crop productivity.</p>
+<p>If we assume we can engineer plants to recognize pathogens given its molecular details (ahem… <a href="https://www.biorxiv.org/content/10.1101/2024.09.30.614878v2">Rim, <strong>Garrett</strong>, et al., 2024</a>), then all we need to do is predict those molecular details and preemptively engineer recognition in crops. Easier said than done.</p>
+<p>Nevertheless, this is what I strive to accomplish in my PhD thesis. Stay tuned for results on bioRxiv.</p>
+</section>
+<section id="engineering-plant-immune-receptors" class="level2">
+<h2 class="anchored" data-anchor-id="engineering-plant-immune-receptors">Engineering Plant Immune Receptors</h2>
+<p>As mentioned above, in the coevolutionary arms race between crops and their pathogens, humans are pushing crops forward, but never getting ahead of the pathogens. In fact, we can sometimes be years behind them, resulting in devastating losses for the most vulnerable farmers.</p>
+<p>Traditionally, we <em>breed</em> resistance into crops. We do that by first screening cultivars and their wild counterparts for disease resistance, then laboriously breed them into our elite cultivars, striving to introduce just the disease resistance genes without negatively impacting yield (which often happens). These efforts have decade-long timelines.</p>
+<p>Unfortunately, the threat of crop pathogens is increasing as global trade and climate change expand pathogen range where hosts haven’t evolved resistance. Now more than ever, we need better, faster methods to retool crop immune systems to fight of disease.</p>
+<div class="grid">
+<div class="g-col-6">
+<p>In <a href="https://www.biorxiv.org/content/10.1101/2024.09.30.614878v2">Rim, <strong>Garrett</strong> et. al (2024)</a>, we charted one path forward. Focusing on rice blast, a crop disease destroying enough food each year to feed 60 million people, we used directed evolution to evolve plant immune receptors to detect pathogens that had escaped detection. By recapitulating the interaction in a yeast-based system, we could run directed evolution campaigns at unprecedented scale. This also yielded rich datasets used in <a href="https://www.biorxiv.org/content/10.1101/2025.01.27.635131v1">Howard, Rim, <strong>Garrett</strong>, et al.&nbsp;(2025)</a> to train the protein language model ESM2 to predict the recognition capacity of new plant immune receptors. When we have a new immune receptor sequence that can recognize pathogens, we can use gene editing tools to mirror the changes in crops.</p>
+</div>
+<div class="g-col-6">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ysd.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Plant immune receptors displayed on the surface of yeast cells binding to fluorescently-labeled pathogen molecules.</strong></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>To learn more, see the preprints linked above.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
